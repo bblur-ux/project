@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <style>
+        body {
+            background-color: white; /* Set white background color */
+            font-family: Arial, sans-serif;
+            color: black;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure full viewport height */
+        }
+        .content {
+            flex: 1; /* Take remaining space */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: center;
+            margin-top: 0; /* Remove margin top */
+        }
+        input[type="text"] {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: calc(80% + 16px); /* Increased width by 8px on each side */
+            border: none;
+            border-bottom: 2px solid #3498db;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 80%;
+            margin: 10px auto;
+            display: block;
+        }
+        .or-divider {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .or-divider::before,
+        .or-divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #000;
+        }
+        .or-text {
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        .signup-button {
+            background-color: white;
+            border: 1px solid blue;
+            color: blue;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 80%;
+            margin: 10px auto;
+            display: block;
+        }
+        .language-links {
+            margin-top: 7px;
+            margin-bottom: 0; /* Remove margin bottom */
+        }
+        .footer {
+            background-color: #f0f0f0;
+            padding: 20px 0;
+            color: #333;
+            font-size: 14px;
+            text-align: center;
+            margin-top: auto; /* Align at bottom of viewport */
+            width: 100%;
+        }
+        .footer a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content">
+    <form action="process.php" method="post">
+        <img src="logo.png" alt="Logo" style="width: 100px; height: auto; margin-top: 0;"> <!-- Remove margin top for logo -->
+        <input type="text" name="email" placeholder="Email" required>
+        <a href="#" style="color: blue;">Forget email?</a>
+        <input type="submit" value="Next" class="submit-button">
+        <div class="or-divider">
+            <div class="or-line"></div>
+            <span class="or-text">OR</span>
+            <div class="or-line"></div>
+        </div>
+        <button type="button" class="signup-button">Sign Up</button>
+        <div class="language-links">
+            <p>English | Français | Español</p>
+        </div>
+    </form>
+</div>
+
+<div class="footer">
+    <a href="#">Contact Us</a> |
+    <a href="#">Privacy</a> |
+    <a href="#">Legal</a> |
+    <a href="#">Policy Updates</a> |
+    <a href="#">Worldwide</a>
+</div>
+
+</body>
+</html>
